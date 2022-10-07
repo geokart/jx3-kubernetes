@@ -6,7 +6,7 @@ spec:
     schedule: ""
   cluster:
     chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
-    clusterName: kind
+    clusterName: kubernetes
     devEnvApprovers:
     - todo
     environmentGitOwner: todo
@@ -20,11 +20,11 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: "nnit.io"
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
-      email: ""
+      email: "root@localhost"
       enabled: false
       production: false
   repository: bucketrepo
